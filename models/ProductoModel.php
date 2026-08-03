@@ -15,7 +15,7 @@ class ProductoModel {
     }
 
     // Obtiene un solo producto por su ID único
-    public function obtenerPorId($id) {
+    public function obtenerPorId(int $id) {
         $stmt = $this->db->prepare("SELECT * FROM productos WHERE id = :id");
         $stmt->execute(['id' => $id]);
         return $stmt->fetch(PDO::FETCH_ASSOC);

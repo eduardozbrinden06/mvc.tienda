@@ -1,0 +1,9 @@
+Options All -Indexes
+RewriteEngine On
+
+# Evitar que se aplique la regla si es un archivo o directorio real (como imágenes o CSS)
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME} !-f
+
+# Redirigir todo lo demás a index.php pasando la ruta como parámetro oculto
+RewriteRule ^(.*)$ index.php?url=$1 [QSA,L]

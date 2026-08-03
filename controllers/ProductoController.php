@@ -20,9 +20,11 @@ class ProductoController {
        
         if (!$producto) {
             die("El producto solicitado no existe.");
-        }
+        } else {
+            require_once 'views/detalle.php';
+        }   
        
-        require_once 'views/detalle.php';
+        //require_once 'views/detalle.php';
     }
 }
 ?>
