@@ -1,4 +1,4 @@
-Este proyecto esta creado para aprender a utilizar un sistema con el formato
+Este proyecto esta creado para aprender a utilizar un sistema con el patrón de arquitectura
 modelo vista controlador (MVC) en PHP.
 
 **# Versión 1.0**
