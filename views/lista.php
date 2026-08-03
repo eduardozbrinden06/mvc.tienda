@@ -15,7 +15,8 @@
                         <div class="card-body">
                             <h5 class="card-title"><?php echo htmlspecialchars($p['nombre']); ?></h5>
                             <p class="text-primary fw-bold">$<?php echo number_format($p['precio'], 2); ?></p>
-                            <a href="index.php?action=ver&id=<?php echo $p['id']; ?>" class="btn btn-outline-primary w-100">
+                            <a href="producto/ver/<?php echo $p['id']; ?>" class="btn btn-outline-primary w-100">
+                            <!--<a href="index.php?action=ver&id=<?php //echo $p['id']; ?>" class="btn btn-outline-primary w-100">-->
                                 Ver Detalles
                             </a>
                         </div>
